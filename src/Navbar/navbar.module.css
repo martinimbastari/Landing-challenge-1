@@ -215,7 +215,6 @@
 
 @media screen and (max-width: 495px) {
     .nav {
-       
         padding: 0 15px;
         justify-content: space-between;
     }
@@ -229,15 +228,14 @@
 
     .contenedorImg {
         height: 60px;
+        width: 80px;
     }
 
     .mobileMenu {
-        
         display: inline;
     }
 
     .menuOverlay {
-        
         display: flex;
         flex-direction: column;
         justify-content: space-between;

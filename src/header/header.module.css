@@ -1,4 +1,5 @@
 .contenedorHeader {
+    padding: 0 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,40 +34,46 @@
 
 .contenedorInfo p {
     font-size: 18px;
+    padding: 0 2rem;
     margin-bottom: 2rem;
-    width: 70%;
+    width: 100%;
+    color: hsl(0, 0%, 41%);
 }
 
 
 .contenedorInfo button {
-    padding: 10px;
-    border-radius: 9px;
+    padding: 14px;
+    border-radius: 14px;
     color: rgb(249, 249, 249);
-    background-color: black;
-    width: 130px;
+    background-color: hsl(0, 0%, 8%);
+    width: 150px;
+    border: 1px solid transparent;
+    font-size: 18px;
 }
 
 .contenedorInfo button:hover {
     cursor: pointer;
     background-color:  hsl(0, 0%, 98%);
-    color: black;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
 }
 
 .contenedorClientes {
     display: flex;
+    width: 100%;
     align-items: center;
-    padding: 7rem 0 0 0;
+    padding: 3rem 0 0 0;
 }
 
 .contenedorClientes img {
     padding: 0 2rem 0 0;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 495px) {
     .contenedorHeader {
         display: flex;
-        flex-direction: column;
-        max-width: 375px;
+        flex-direction: column-reverse;
         padding: 0 1rem;
         margin: 0;
     }
@@ -75,6 +82,7 @@
         top: 0;
         left: 0;
         right: 0;
+        margin: 0;
         height: 300px;
         width: 375px;
     }
@@ -84,16 +92,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0;
+        padding: 3rem 0 0 0;
+        margin: 0;
         text-align: center;
     }
 
     .contenedorInfo h2 {
-        font-size: 35px;
-        margin-bottom: 2rem;
+        font-size: 40px;
+        margin-bottom: 1rem;
     }
 
     .contenedorInfo p {
+        padding: 0 1rem;
+        line-height: 1.8rem;
         width: 100%;
     }
 
@@ -107,13 +118,14 @@
 
     .contenedorClientes {
         display: flex;
+        justify-content: center;
         object-fit: contain;
         padding: 4rem 0rem;
         margin: 0;
-        max-width: 300px;
+        gap: 30px;
     }
 
     .contenedorClientes img {
-        padding: 0 1rem;
+       padding: 0;
     }
 }
