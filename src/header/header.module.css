@@ -62,7 +62,7 @@
     padding: 0 2rem 0 0;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 495px) {
     .contenedorHeader {
         display: flex;
         flex-direction: column;
