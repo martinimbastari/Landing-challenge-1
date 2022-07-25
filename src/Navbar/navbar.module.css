@@ -213,7 +213,7 @@
     color: hsl(0, 0%, 41%);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 395px) {
     .nav {
         padding: 0 15px;
         justify-content: space-between;
