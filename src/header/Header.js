@@ -11,8 +11,8 @@ export default function Header() {
   return (
     <div className={style.contenedorHeader}>
         <div className={style.contenedorInfo}>
-            <h2>Make <br/> remote work</h2>
-            <p>Get your team in sync, no matter your location. <br/>
+            <h2>Make remote work</h2>
+            <p>Get your team in sync, no matter your location.
             Streamline processes, create team rituals, and watch productivity soar.</p>
             <button>Learn more</button>
             <div className={style.contenedorClientes}>
