@@ -1,8 +1,13 @@
 import React, {useState}from 'react'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import {GrClose} from 'react-icons/gr'
 import logo from '../assets/logo.svg'
 import style from  './navbar.module.css'
+import arrowDown from '../assets/icon-arrow-down.svg';
+import iconMenu from '../assets/icon-menu.svg'
+import iconClose from '../assets/icon-close-menu.svg'
+import calendar from '../assets/icon-calendar.svg'
+import planning from '../assets/icon-planning.svg'
+import reminders from '../assets/icon-reminders.svg'
+import todo from '../assets/icon-todo.svg'
 
 export default function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -14,14 +19,14 @@ export default function Navbar() {
             <img src={logo}/>    
         </div>
         <ul className={style.menuHorizontal}>
-            <li><a>Features &#8595;</a>
-            <ul className={style.menuVertical1}><li><a>📝 Todo List</a></li>
-            <li><a>📅 Calendar</a></li>
-            <li><a>🔔 Reminders</a></li>
-            <li><a>⏱️ Plannings</a></li></ul>
+            <li><a>Features <img src={arrowDown}/></a>
+            <ul className={style.menuVertical1}><li><a><img src={todo}/> Todo List</a></li>
+            <li><a><img src={calendar}/> Calendar</a></li>
+            <li><a><img src={reminders}/> Reminders</a></li>
+            <li><a><img src={planning}/> Plannings</a></li></ul>
             
             </li>
-            <li><a>Company &#8595;</a>
+            <li><a>Company <img src={arrowDown}/></a>
             <ul className={style.menuVertical2}>
             <li><a>History</a></li>
             <li><a>Our Team</a></li>
@@ -37,16 +42,16 @@ export default function Navbar() {
             <button className={style.btnRegister}>Register</button>
         </div>
         <div className={style.mobileMenu}>
-        <GiHamburgerMenu onClick={() =>setToggleMenu(true)}  fontSize={25} color='black' />
+        <img src={iconMenu} onClick={() =>setToggleMenu(true)}  fontSize={25} color='black' />
         {toggleMenu && (
                 <div className={style.menuOverlay}>
-                <GrClose onClick={() =>setToggleMenu(false)} className={style.btnClose}/>
+                <img src={iconClose} onClick={() =>setToggleMenu(false)} className={style.btnClose}/>
                 <ul className={style.mobileMenuList}>
                 <li><a>Features &#8595;</a>
-                <ul className={style.mobileMenuListDesplegable1}><li><a>📝 Todo List</a></li>
-                <li><a>📅 Calendar</a></li>
-                <li><a>🔔 Reminders</a></li>
-                <li><a>⏱️ Plannings</a></li></ul>
+                <ul className={style.mobileMenuListDesplegable1}><li><a><img src={todo}/> Todo List</a></li>
+                <li><a><img src={calendar}/> Calendar</a></li>
+                <li><a><img src={reminders}/> Reminders</a></li>
+                <li><a><img src={planning}/> Plannings</a></li></ul>
                 
                 </li>
                 <li><a>Company &#8595;</a>
