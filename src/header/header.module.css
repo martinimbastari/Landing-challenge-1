@@ -11,6 +11,10 @@
     height: 600px;
 }
 
+.fotoMobile{
+    display: none;
+}
+
 .contenedorImg img {
     width: 100%;
     height: 100%;
@@ -56,4 +60,47 @@
 
 .contenedorClientes img {
     padding: 0 2rem 0 0;
+}
+
+@media screen and (max-width: 375px) {
+    .contenedorHeader {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    .contenedorImg {
+        height: 300px;
+        width: 375px;
+    }
+
+    .contenedorInfo {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedorInfo h2 {
+        font-size: 50px;
+    }
+
+    .contenedorInfo p {
+        width: 100%;
+    }
+
+    .fotoDesktop{
+        display: none;
+    }
+
+    .fotoMobile {
+        display: block;
+    }
+
+    .contenedorInfo {
+        margin-top: 2rem;
+        padding: 0 5rem;
+        text-align: start;
+    }
 }
